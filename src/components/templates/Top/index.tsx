@@ -5,12 +5,12 @@ export const Top = () => {
   return (
     <>
       <Header />
-      <div>
+      <main>
         <div className={styles['main-visual']}>MainVisual</div>
         <div className={styles.contents}>News</div>
         <div className={styles.contents}>Member</div>
         <div className={styles.contents}>About</div>
-      </div>
+      </main>
       <Footer />
     </>
   );
