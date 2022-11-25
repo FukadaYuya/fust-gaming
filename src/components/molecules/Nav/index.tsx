@@ -1,20 +1,21 @@
 import styles from './index.module.scss';
+import Link from 'next/link'
 
 export const Nav = () => {
   return (
     <nav className={styles.main}>
       <ul>
         <li>
-          <a href="">Top</a>
+          <Link href=".">Top</Link>
         </li>
         <li>
-          <a href="">News</a>
+          <Link href="/news">News</Link>
         </li>
         <li>
-          <a href="">Member</a>
+          <Link href="/member">Member</Link>
         </li>
         <li>
-          <a href="">About</a>
+          <Link href="/about">About</Link>
         </li>
       </ul>
     </nav>
