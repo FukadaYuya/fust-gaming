@@ -1,5 +1,16 @@
 .main {
-  text-align: center;
-  font-size: 30px;
-  border: 1px solid white;
+  background: #0d0c0c;
+  display: flex;
+  padding: 24px 72px;
+}
+
+.logo {
+  width: 84px;
+  height: 73px;
+  background: #d9d9d9;
+}
+
+.nav {
+  margin: auto;
+  max-width: 1055px;
 }

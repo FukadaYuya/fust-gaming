@@ -5,17 +5,17 @@ export const Nav = () => {
   return (
     <nav className={styles.main}>
       <ul>
-        <li>
-          <Link href=".">Top</Link>
+        <li className={styles.link}>
+          <Link href=".">TOP</Link>
         </li>
-        <li>
-          <Link href="/news">News</Link>
+        <li className={styles.link}>
+          <Link href="/news">NEWS</Link>
         </li>
-        <li>
-          <Link href="/member">Member</Link>
+        <li className={styles.link}>
+          <Link href="/member">MEMBER</Link>
         </li>
-        <li>
-          <Link href="/about">About</Link>
+        <li className={styles.link}>
+          <Link href="/about">ABOUT</Link>
         </li>
       </ul>
     </nav>

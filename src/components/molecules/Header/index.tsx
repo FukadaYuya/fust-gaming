@@ -4,8 +4,10 @@ import { Nav } from '@/components/molecules';
 export const Header = () => {
   return (
     <header className={styles.main}>
-      <div>Header</div>
-      <Nav />
+      <div className={styles.logo}></div>
+      <div className={styles.nav}>
+        <Nav />
+      </div>
     </header>
   );
 };
