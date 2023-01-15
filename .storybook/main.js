@@ -11,6 +11,7 @@ module.exports = {
   core: {
     builder: 'webpack5',
   },
+  staticDirs: ["../public"],
   webpackFinal: async (config) => {
     config.resolve.alias['@'] = path.join(__dirname, '../src/');
     config.module.rules.push({
