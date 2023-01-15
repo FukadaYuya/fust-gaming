@@ -17,7 +17,7 @@ export const Top = () => {
         <div className={styles.contents}>
           <Title text="ABOUT" changeFontIndexes={[4]} />
         </div>
-        <div>
+        <div className={styles.contents}>
           <Title text="MEMBER" changeFontIndexes={[1, 2]} />
           <TargetImage
             images={[
