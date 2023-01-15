@@ -1,5 +1,10 @@
 import styles from './index.module.scss';
-import { Header, Footer, TargetImage } from '@/components/molecules';
+import {
+  Header,
+  Footer,
+  TargetImage,
+  ImageSlide,
+} from '@/components/molecules';
 import { MainVisual } from '@/components/atoms';
 
 export const Top = () => {
@@ -17,7 +22,18 @@ export const Top = () => {
             ]}
           />
         </div>
-        <div className={styles.contents}>Games</div>
+        <div className={styles.contents}>
+          <ImageSlide
+            images={[
+              { src: '/images/haruhi.png', alt: 'haruhi', linkUrl: './' },
+              { src: '/images/haruhi.png', alt: 'haruhi', linkUrl: './' },
+              { src: '/images/haruhi.png', alt: 'haruhi', linkUrl: './' },
+              { src: '/images/haruhi.png', alt: 'haruhi', linkUrl: './' },
+              { src: '/images/haruhi.png', alt: 'haruhi', linkUrl: './' },
+              { src: '/images/haruhi.png', alt: 'haruhi', linkUrl: './' },
+            ]}
+          ></ImageSlide>
+        </div>
       </main>
       <Footer />
     </>
