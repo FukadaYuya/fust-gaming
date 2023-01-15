@@ -12,7 +12,7 @@ export const Default = Template.bind({});
 
 Default.args = {
   images: [
-    'https://www.pakutaso.com/shared/img/thumb/shikun20220402_122123_TP_V.jpg',
-    'https://www.pakutaso.com/shared/img/thumb/shikun20220402_122123_TP_V.jpg',
+    'https://pbs.twimg.com/profile_images/1513894342951284743/bodoAnHy_400x400.jpg',
+    'https://pbs.twimg.com/profile_images/1513894238098161664/dsly89-5_400x400.jpg',
   ],
 };
