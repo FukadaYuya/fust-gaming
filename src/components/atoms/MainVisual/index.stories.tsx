@@ -12,5 +12,5 @@ const Template: Story<Props> = (args) => <MainVisual {...args} />;
 export const Default = Template.bind({});
 
 Default.args = {
-  imgUrl: '',
+  imgUrl: '/images/main-visual.png',
 };

@@ -7,7 +7,7 @@ export const Top = () => {
     <>
       <Header />
       <main>
-        <MainVisual imgUrl="" />
+        <MainVisual imgUrl="/images/main-visual.png" />
         <div className={styles.contents}>News</div>
         <div>
           <TargetImage

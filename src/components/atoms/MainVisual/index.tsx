@@ -10,13 +10,13 @@ type ComponentProps = Props;
 const Component = ({ imgUrl }: ComponentProps) => {
   return (
     <div className={styles.main}>
-      {!!imgUrl && (
-        <Image
-          className={styles.img}
-          src={imgUrl || ''}
-          alt="main-visual"
-        ></Image>
-      )}
+      <Image
+        className={styles.img}
+        src={imgUrl || ''}
+        alt="main-visual"
+        width={1920}
+        height={960}
+      ></Image>
     </div>
   );
 };
