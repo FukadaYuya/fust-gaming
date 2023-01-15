@@ -1,0 +1,26 @@
+.module {
+}
+
+.splide_wrapper {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.slide_img {
+  border-radius: 50%;
+}
+
+.splide_arrow {
+  background: none;
+}
+
+.crosshair {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  opacity: 0.4;
+}
