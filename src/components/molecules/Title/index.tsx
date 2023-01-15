@@ -1,7 +1,6 @@
 import styles from './index.module.scss';
-import Image from 'next/image';
 
-type Props = {
+export type Props = {
   text: string;
 };
 
@@ -9,7 +8,7 @@ type ComponentProps = Props;
 
 const Component = ({ text }: ComponentProps) => {
   return (
-    <div className={styles.main}>
+    <div className={styles.module}>
       <h2>{text}</h2>
     </div>
   );
