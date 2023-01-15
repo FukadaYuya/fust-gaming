@@ -8,7 +8,7 @@ export const Top = () => {
       <Header />
       <main>
         <MainVisual imgUrl="/images/main-visual.png" />
-        <div className={styles.contents}>News</div>
+        <div className={styles.contents}>About</div>
         <div>
           <TargetImage
             images={[
@@ -17,7 +17,7 @@ export const Top = () => {
             ]}
           />
         </div>
-        <div className={styles.contents}>About</div>
+        <div className={styles.contents}>Games</div>
       </main>
       <Footer />
     </>
