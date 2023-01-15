@@ -1,7 +1,7 @@
 import styles from './index.module.scss';
 import Image from 'next/image';
 
-type Props = {
+export type Props = {
   imgUrl: string;
 };
 
