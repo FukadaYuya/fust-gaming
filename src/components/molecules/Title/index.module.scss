@@ -1,32 +1,9 @@
 .module {
-  text-align: center;
   font-size: 30px;
-
-  > ul {
-    display: flex;
-    gap: 200px;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    list-style: none;
-  }
 }
 
-.link {
-  width: 25%;
-  &:hover {
-    > a {
-      color: aliceblue;
-    }
-  }
-
-  > a {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 500;
-    width: 100%;
-    font-size: 48px;
-    height: 100%;
-    line-height: 58px;
-    letter-spacing: 0.05em;
+.title {
+  > span {
+    color: #1217f8;
   }
 }

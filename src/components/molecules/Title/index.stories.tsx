@@ -9,7 +9,13 @@ export default {
 const Template: Story<Props> = (args) => <ViewComponent {...args} />;
 
 export const Default = Template.bind({});
+export const ChangeFontColor = Template.bind({});
 
 Default.args = {
-  text: 'Sample'
-}
+  text: 'Sample',
+};
+
+ChangeFontColor.args = {
+  text: 'Sample',
+  changeFontIndexes: [0, 2],
+};
