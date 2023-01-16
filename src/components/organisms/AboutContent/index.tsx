@@ -1,3 +1,4 @@
+import { MoveBackArea } from '@/components/atoms';
 import { useMemo } from 'react';
 import styles from './index.module.scss';
 
@@ -10,7 +11,11 @@ type ComponentProps = Props;
 const Component = ({ description }: ComponentProps) => {
   return (
     <div className={styles.module}>
-      <div dangerouslySetInnerHTML={{ __html: description }}></div>
+      <div className={styles.inner}>
+        <MoveBackArea>
+          <div className={styles.text} dangerouslySetInnerHTML={{ __html: description }}></div>
+        </MoveBackArea>
+      </div>
     </div>
   );
 };

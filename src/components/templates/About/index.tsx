@@ -12,7 +12,9 @@ export const About = ({ about }: Props) => {
     <>
       <Header />
       <main>
-        <AboutContent description={about.description} />
+        <div className={styles.main}>
+          <AboutContent description={about.description} />
+        </div>
       </main>
       <Footer />
     </>
