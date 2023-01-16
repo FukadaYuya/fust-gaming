@@ -24,4 +24,19 @@
   right: 0;
   margin: auto;
   opacity: 0.4;
+  &:hover {
+    animation: r1 1s linear;
+    @keyframes r1 {
+      0% {
+        transform: rotate(0deg);
+      }
+      50% {
+        scale: 0.5;
+      }
+      100% {
+        scale: 1;
+        transform: rotate(180deg);
+      }
+    }
+  }
 }
