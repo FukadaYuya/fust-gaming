@@ -1,5 +1,6 @@
 import styles from './index.module.scss';
 import { MainVisual, MoreLink } from '@/components/atoms';
+import { members, games } from '../../../types/cms-types';
 import {
   Header,
   Footer,
@@ -8,7 +9,13 @@ import {
   Title,
 } from '@/components/molecules';
 
-export const Top = () => {
+export type TopProps = {
+  members: members[];
+  games: games[];
+};
+
+export const Top = ({ members, games }: TopProps) => {
+  console.log(games);
   return (
     <>
       <Header />
@@ -30,14 +37,11 @@ export const Top = () => {
         <div className={styles.contents}>
           <Title text="GAMES" changeFontIndexes={[0]} />
           <ImageSlide
-            images={[
-              { src: '/images/haruhi.png', alt: 'haruhi', linkUrl: './' },
-              { src: '/images/haruhi.png', alt: 'haruhi', linkUrl: './' },
-              { src: '/images/haruhi.png', alt: 'haruhi', linkUrl: './' },
-              { src: '/images/haruhi.png', alt: 'haruhi', linkUrl: './' },
-              { src: '/images/haruhi.png', alt: 'haruhi', linkUrl: './' },
-              { src: '/images/haruhi.png', alt: 'haruhi', linkUrl: './' },
-            ]}
+            images={games.map((game) => ({
+              src: game.icon_img.url,
+              alt: game.title,
+              linkUrl: game.link_url,
+            }))}
           />
           <MoreLink text={'MORE'} linkUrl={'/games'} />
         </div>

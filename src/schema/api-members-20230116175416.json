@@ -1,0 +1,1 @@
+{"apiFields":[{"idValue":"3QG-L4D3Ue","fieldId":"icon_img","name":"アイコン","kind":"media"},{"fieldId":"name","name":"名前","kind":"text","required":true,"isUnique":false},{"fieldId":"discription","name":"説明","kind":"textArea"}],"customFields":[]}

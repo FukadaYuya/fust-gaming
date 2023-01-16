@@ -45,14 +45,18 @@ const Component = ({ images }: ComponentProps) => {
             {images.map((image, i) => (
               <SplideSlide key={i}>
                 <div className={styles.splide_wrapper}>
-                  <Link href={image.linkUrl}>
+                  <a
+                    href={image.linkUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <Image
                       src={image.src}
                       alt={image.alt}
                       width={600}
                       height={300}
                     />
-                  </Link>
+                  </a>
                 </div>
               </SplideSlide>
             ))}

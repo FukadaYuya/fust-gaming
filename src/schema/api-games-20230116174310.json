@@ -1,0 +1,23 @@
+{
+  "apiFields": [
+    {
+      "idValue": "EfCl2OdvCI",
+      "fieldId": "title",
+      "name": "タイトル",
+      "kind": "text",
+      "isUnique": false
+    },
+    {
+      "fieldId": "icon_img",
+      "name": "画像",
+      "kind": "media"
+    },
+    {
+      "fieldId": "link_url",
+      "name": "リンクURL",
+      "kind": "text",
+      "isUnique": false
+    }
+  ],
+  "customFields": []
+}

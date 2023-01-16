@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "createCMSTypes": "yarn microcms-typescript src/schema src/types/cms-types.ts"
   },
   "dependencies": {
     "@splidejs/react-splide": "^0.7.12",
@@ -18,6 +19,8 @@
     "@types/react-dom": "18.0.9",
     "eslint": "8.28.0",
     "eslint-config-next": "13.0.5",
+    "microcms-js-sdk": "^2.3.2",
+    "microcms-lib": "^1.0.4",
     "next": "13.0.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -37,7 +40,9 @@
     "@storybook/testing-library": "^0.0.13",
     "babel-loader": "^8.3.0",
     "css-loader": "^6.7.3",
+    "microcms-typescript": "^1.0.14",
     "sass-loader": "^13.2.0",
-    "style-loader": "^3.3.1"
+    "style-loader": "^3.3.1",
+    "ts-node": "^10.9.1"
   }
 }
