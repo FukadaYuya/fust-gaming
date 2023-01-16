@@ -1,4 +1,5 @@
 import { HoverView, MoveBackArea } from '@/components/atoms';
+import { PlayerView } from '@/components/molecules';
 import { games } from '@/types/cms-types';
 import styles from './index.module.scss';
 
@@ -12,13 +13,7 @@ const Component = ({ games }: ComponentProps) => {
   return (
     <div className={styles.module}>
       <div className={styles.inner}>
-        <HoverView
-          image={{
-            src: games.icon_img.url,
-            alt: games.title,
-            linkUrl: games.link_url,
-          }}
-        />
+        <PlayerView members={[]} />
       </div>
     </div>
   );
