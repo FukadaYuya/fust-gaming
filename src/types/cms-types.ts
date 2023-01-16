@@ -51,26 +51,44 @@ T,
   link_url?: string
 }>
 
+export type about<T='get'> = Structure<
+T,
+{
+  /**
+   * タイトル
+   */
+  title?: string
+  /**
+   * 説明
+   */
+  description?: string
+}>
+
 
 export interface EndPoints {
   get: {
     'members': members<'get'>
     'games': games<'get'>
+    'about': about<'get'>
   }
   gets: {
     'members': members<'gets'>
     'games': games<'gets'>
+    'about': about<'gets'>
   }
   post: {
     'members': members<'post'>
     'games': games<'post'>
+    'about': about<'post'>
   }
   put: {
     'members': members<'put'>
     'games': games<'put'>
+    'about': about<'put'>
   }
   patch: {
     'members': members<'patch'>
     'games': games<'patch'>
+    'about': about<'patch'>
   }
 }
