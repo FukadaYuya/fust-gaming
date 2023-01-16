@@ -6,4 +6,7 @@
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  &:hover {
+    opacity: 0.6;
+  }
 }
