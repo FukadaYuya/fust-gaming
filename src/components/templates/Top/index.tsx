@@ -1,5 +1,5 @@
 import styles from './index.module.scss';
-import { MainVisual } from '@/components/atoms';
+import { MainVisual, MoreLink } from '@/components/atoms';
 import {
   Header,
   Footer,
@@ -25,6 +25,7 @@ export const Top = () => {
               'https://pbs.twimg.com/profile_images/1513894238098161664/dsly89-5_400x400.jpg',
             ]}
           />
+          <MoreLink text={'MORE'} linkUrl={'/member'} />
         </div>
         <div className={styles.contents}>
           <Title text="GAMES" changeFontIndexes={[0]} />
@@ -37,7 +38,8 @@ export const Top = () => {
               { src: '/images/haruhi.png', alt: 'haruhi', linkUrl: './' },
               { src: '/images/haruhi.png', alt: 'haruhi', linkUrl: './' },
             ]}
-          ></ImageSlide>
+          />
+          <MoreLink text={'MORE'} linkUrl={'/games'} />
         </div>
       </main>
       <Footer />
